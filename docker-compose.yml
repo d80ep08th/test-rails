@@ -1,6 +1,14 @@
 version: '2.4'
 
 services:
+  resurface:
+    image: docker.resurface.io/release/pilot
+    container_name: express_resurface
+    ports:
+      - '4000:4000'
+      - '4001:4001'
+      - '4002:4002'
+
   app: &app
     build:
       context: .
