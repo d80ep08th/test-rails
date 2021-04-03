@@ -24,7 +24,7 @@ default: &default
 
 development:
   <<: *default
-  database: martian_library_development
+  database: resurface_library_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,7 +58,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: martian_library_test
+  database: resurface_library_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: martian_library_production
-  username: martian_library
+  database: resurface_library_production
+  username: resurface_library
   password: <%= ENV['MARTIAN_LIBRARY_DATABASE_PASSWORD'] %>

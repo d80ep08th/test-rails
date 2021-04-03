@@ -10,7 +10,7 @@ start:
 stop:
 	@docker-compose stop
 	@docker-compose down --volumes
-	@docker image rmi -f martians-library-dev:1.1.0
+	@docker image rmi -f resurface-library-dev:1.1.0
 
 bash:
 	@docker exec -it rails bash

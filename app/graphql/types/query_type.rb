@@ -3,7 +3,7 @@ module Types
     field :items,
           [Types::ItemType],
           null: false,
-          description: "Returns a list of items in the martian library"
+          description: "Returns a list of items in the resurface library"
 
     def items
       Item.preload(:user)

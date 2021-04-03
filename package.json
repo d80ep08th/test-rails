@@ -1,5 +1,5 @@
 {
-  "name": "martian_library",
+  "name": "resurface_library",
   "private": true,
   "scripts": {
     "lint": "eslint client",
