@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   #GET /ping
-  get "ping", to: "ping#index"
+  get "ping", to: "resurface#index"
 
   if Rails.env.development?
     mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/graphql"

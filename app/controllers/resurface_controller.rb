@@ -7,4 +7,9 @@ class ResurfaceController < ApplicationController
     rules: 'include debug'
   )
 
+  def index
+      @pong = {message: 'pong'}
+      render json: @pong
+  end
+
 end
